@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+
+    # Application & web server
+    gatewayapp:
+        container_name: gatewayWebApp
+        build:
+            context: .
+        working_dir: /var/www
+        environment:
+          PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
+        volumes:
+            - ./:/var/www
+        ports:
+            - 8887:80
