@@ -1,4 +1,4 @@
-FROM 493356053890.dkr.ecr.ap-south-1.amazonaws.com/beyondcare_base:latest
+FROM 493356om/:latest
 
 WORKDIR /var/www/
 #copy /app into docker container
